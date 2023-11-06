@@ -101,7 +101,6 @@ header > h1 > span {
   position: relative;
 }
 .services > .services-heading > .triangle-container {
-  z-index: -1;
   width: 100%;
   height: 0;
   border-top: 100px solid transparent;
@@ -125,6 +124,85 @@ header > h1 > span {
   background-color: #4e5279;
 }
 
+.about-us {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  padding-bottom: 30px;
+  background-color: #4e5279;
+}
+.about-us > div:first-of-type {
+  display: flex;
+  gap: 20px;
+  height: 50px;
+  margin-bottom: 17px;
+}
+.about-us > div:first-of-type > div:first-of-type {
+  width: 8px;
+  height: 100%;
+  background-color: #cb7878;
+}
+.about-us > div:first-of-type > div:last-of-type {
+  color: #abafce;
+}
+.about-us > div:first-of-type > div:last-of-type > h2 {
+  font-size: 25px;
+}
+.about-us > p {
+  color: #abafce;
+  font-size: 11px;
+  margin-bottom: 30px;
+}
+.about-us > div:last-of-type {
+  display: flex;
+  justify-content: space-between;
+}
+.about-us > div:last-of-type > div > h5 {
+  font-size: 13px;
+  color: #cb7878;
+}
+.about-us > div:last-of-type > div > p {
+  font-size: 11px;
+  color: #abafce;
+}
+
+.companies-slider > .slider {
+  width: 80%;
+  margin: 0 auto;
+}
+.companies-slider > .slider > ul {
+  display: flex;
+  gap: 20px;
+  padding-block: 0.2rem;
+  flex-wrap: wrap;
+}
+.companies-slider > .slider > ul > li {
+  list-style: none;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.companies-slider > .slider > ul > li > img {
+  max-width: 100%;
+}
+.companies-slider .slider[data-animated=true] {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(90deg, transparent, #d9d9d9 20%, #d9d9d9 80%, transparent);
+  mask: linear-gradient(90deg, transparent, #d9d9d9 20%, #d9d9d9 80%, transparent);
+}
+.companies-slider .slider[data-animated=true] .scroller_inner {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
 @font-face {
   font-family: "Actor";
   src: url(../assets/fonts/Actor-Regular.ttf);

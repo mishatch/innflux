@@ -1,0 +1,46 @@
+@import "../../variables";
+@import "../../palette";
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  padding-bottom: 30px;
+  background-color: $primary-bg-dark;
+  > div:first-of-type {
+    display: flex;
+    gap: 20px;
+    height: 50px;
+    margin-bottom: 17px;
+    > div:first-of-type {
+      width: 8px;
+      height: 100%;
+      background-color: $highlight;
+    }
+    > div:last-of-type {
+      color: $text-color-lightdark;
+      > h2 {
+        font-size: $heading-size-mobile-bold;
+      }
+    }
+  }
+  > p {
+    color: $text-color-lightdark;
+    font-size: $paragraph-size-mobile;
+    margin-bottom: 30px;
+  }
+  > div:last-of-type {
+    display: flex;
+    justify-content: space-between;
+    > div {
+      > h5 {
+        font-size: 13px;
+        color: $highlight;
+      }
+      > p {
+        font-size: $paragraph-size-mobile;
+        color: $text-color-lightdark;
+      }
+    }
+  }
+}

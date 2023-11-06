@@ -167,7 +167,7 @@ header > h1 > span {
 }
 
 .companies-slider > .slider {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 .companies-slider > .slider > ul {
@@ -200,7 +200,7 @@ header > h1 > span {
 
 @keyframes scroll {
   to {
-    transform: translate(calc(-50% - 0.5rem));
+    transform: translate(calc(-50% - 10px));
   }
 }
 @font-face {

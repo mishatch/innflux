@@ -1,0 +1,48 @@
+@import "../../variables";
+@import "../../palette";
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  background-color: $primary-bg-dark;
+  > .footer-logo {
+    width: 155px;
+  }
+  > .footer-info {
+    margin-top: 20px;
+
+    > ul {
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      flex-direction: column;
+      > li {
+        text-align: center;
+        list-style: none;
+        font-size: $paragraph-size-mobile;
+        color: $text-color-lightdark;
+      }
+    }
+  }
+  > .footer-icons {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    > ul {
+      display: flex;
+      gap: 15px;
+      > li {
+        list-style: none;
+        > a {
+          &:hover {
+            path {
+              fill: white;
+              transition: 0.4s;
+            }
+          }
+        }
+      }
+    }
+  }
+}

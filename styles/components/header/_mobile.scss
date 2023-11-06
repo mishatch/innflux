@@ -1,0 +1,13 @@
+@import "../../variables";
+@import "../../palette";
+header {
+  > h1 {
+    font-size: $heading-size-mobile;
+
+    margin: 0 auto;
+    color: $text-color-dark;
+    > span {
+      color: $highlight;
+    }
+  }
+}

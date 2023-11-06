@@ -2,4 +2,22 @@
 @import "./variables";
 @import "./shared";
 @import "./palette";
+@import "./reset";
 @import "./components/navbar/index";
+@import "./components/header/index";
+@import "./components/innflux-services/index";
+
+@font-face {
+  font-family: "Actor";
+  src: url(../assets/fonts/Actor-Regular.ttf);
+}
+@font-face {
+  font-family: "Calistoga";
+  src: url(../assets/fonts/Calistoga-Regular.ttf);
+}
+.main-font {
+  font-family: "Calistoga";
+}
+.secondary-font {
+  font-family: "Actor";
+}

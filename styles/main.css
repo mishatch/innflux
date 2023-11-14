@@ -491,4 +491,8 @@ footer > .footer-icons > ul > li > a:hover path {
   font-family: "Actor";
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /*# sourceMappingURL=main.css.map */

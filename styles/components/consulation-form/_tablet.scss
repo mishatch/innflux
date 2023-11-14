@@ -1,0 +1,14 @@
+@media screen and (min-width: 768px) {
+  section.consulation-form {
+    > h2 {
+      font-size: $heading-size-tablet;
+    }
+    > p {
+      font-size: $paragraph-size-tablet;
+    }
+    > a {
+      font-size: $heading-size-tablet;
+      width: 168px;
+    }
+  }
+}

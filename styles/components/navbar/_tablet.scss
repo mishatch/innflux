@@ -1,0 +1,35 @@
+@media screen and (min-width: 768px) {
+  section.navbar-mobile {
+    display: none;
+  }
+  section.navbar-desktop {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 20px 40px;
+    padding-bottom: 30px;
+    > .links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      > ul {
+        display: flex;
+        gap: 20px;
+        > li {
+          list-style: none;
+
+          > a {
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+            width: fit-content;
+            font-size: $heading-size-mobile;
+            color: $text-color-dark;
+            text-align: left;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}

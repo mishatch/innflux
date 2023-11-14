@@ -1,0 +1,34 @@
+@media screen and (min-width: 768px) {
+  section.about-us {
+    padding: 40px;
+    flex-direction: row;
+    justify-content: space-between;
+    > div {
+      width: 50%;
+    }
+    > .about-us-img {
+      display: block;
+      width: 265px;
+      height: 265px;
+      background-color: $primary-bg-light;
+    }
+    > .about-us-txt {
+      > div:first-child {
+        > div:last-child {
+          > h2 {
+            font-size: $heading-size-tablet;
+          }
+        }
+      }
+      > p {
+        font-size: $paragraph-size-tablet;
+      }
+      > div:last-of-type {
+        h5.main-font,
+        p.main-font {
+          font-size: $paragraph-size-tablet;
+        }
+      }
+    }
+  }
+}

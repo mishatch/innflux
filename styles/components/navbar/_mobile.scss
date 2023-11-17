@@ -9,10 +9,10 @@
   display: flex;
   justify-content: space-between;
   padding: 20px;
+  overflow-x: hidden;
   .hamburger {
     position: relative;
-    left: 0;
-    right: 0;
+
     display: block;
     width: 35px;
     height: 35px;
@@ -36,9 +36,7 @@
   }
   .hamburger.is-active {
     position: fixed;
-    top: auto;
     right: 20px;
-    left: auto;
   }
   .hamburger.is-active::before {
     transform: rotate(-45deg) translate(-8px, 6px);

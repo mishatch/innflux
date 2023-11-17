@@ -33,8 +33,6 @@
     }
   }
   .hamburger.is-active {
-    position: fixed;
-    right: 20px;
   }
   .hamburger.is-active::before {
     transform: rotate(-45deg) translate(-8px, 6px);

@@ -2,7 +2,8 @@
   section.about-us {
     padding: 40px;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 75px;
     > div {
       width: 50%;
     }

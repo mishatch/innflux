@@ -1,0 +1,28 @@
+@media screen and (min-width: 1024px) {
+  section#about-us {
+    padding: 50px;
+    > .about-us-img {
+      width: 350px;
+      height: 350px;
+    }
+    > .about-us-txt {
+      max-width: 630px;
+      > div:first-child {
+        > div:last-child {
+          > h2 {
+            font-size: $heading-size-desktop;
+          }
+        }
+      }
+      > p {
+        font-size: $paragraph-size-desktop;
+      }
+      > div:last-of-type {
+        h5.main-font,
+        p.main-font {
+          font-size: $paragraph-size-desktop;
+        }
+      }
+    }
+  }
+}

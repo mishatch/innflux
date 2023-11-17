@@ -1,0 +1,8 @@
+@media screen and (min-width: 1024px) {
+  header#header {
+    margin-bottom: 40px;
+    > h1 {
+      font-size: $heading-size-desktop;
+    }
+  }
+}

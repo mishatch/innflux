@@ -1,0 +1,32 @@
+@media screen and (min-width: 1024px) {
+  section#services {
+    > .services-heading {
+      > .services-txt {
+        font-size: $heading-size-desktop;
+      }
+    }
+
+    > .services-icons-desktop {
+      padding: 50px;
+
+      > .services-links {
+        max-width: 920px;
+        gap: 4%;
+        row-gap: 40px;
+        > a {
+          width: 16%;
+          &:hover {
+            > div {
+              background-color: $primary-bg-light;
+              transition: 0.4s;
+            }
+          }
+          > div {
+            width: 100%;
+            height: 160px;
+          }
+        }
+      }
+    }
+  }
+}

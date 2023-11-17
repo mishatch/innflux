@@ -16,6 +16,21 @@ h2 {
   text-align: center;
 }
 
+@media screen and (min-width: 1024px) {
+  section#navbar-desktop {
+    padding: 40px;
+  }
+  section#navbar-desktop > .logo svg {
+    width: 80px;
+    height: 40px;
+  }
+  section#navbar-desktop > .links > ul {
+    gap: 30px;
+  }
+  section#navbar-desktop > .links > ul > li > a {
+    font-size: 19px;
+  }
+}
 .navbar-desktop {
   display: none;
 }
@@ -125,6 +140,14 @@ h2 {
     text-decoration: none;
   }
 }
+@media screen and (min-width: 1024px) {
+  header#header {
+    margin-bottom: 40px;
+  }
+  header#header > h1 {
+    font-size: 35px;
+  }
+}
 header > h1 {
   font-size: 17px;
   margin: 0 auto;
@@ -137,6 +160,30 @@ header > h1 > span {
 @media screen and (min-width: 768px) {
   header.header > h1 {
     font-size: 22px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  section#services > .services-heading > .services-txt {
+    font-size: 35px;
+  }
+  section#services > .services-icons-desktop {
+    padding: 50px;
+  }
+  section#services > .services-icons-desktop > .services-links {
+    max-width: 920px;
+    gap: 4%;
+    row-gap: 40px;
+  }
+  section#services > .services-icons-desktop > .services-links > a {
+    width: 16%;
+  }
+  section#services > .services-icons-desktop > .services-links > a:hover > div {
+    background-color: #d9d9d9;
+    transition: 0.4s;
+  }
+  section#services > .services-icons-desktop > .services-links > a > div {
+    width: 100%;
+    height: 160px;
   }
 }
 .services {
@@ -209,7 +256,7 @@ header > h1 > span {
   }
   section.services > .services-icons-desktop > .services-links {
     width: 100%;
-    max-width: 768px;
+    max-width: 796px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -220,6 +267,28 @@ header > h1 > span {
     height: 110px;
     background-color: #abafce;
     border-radius: 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  section#about-us {
+    padding: 50px;
+  }
+  section#about-us > .about-us-img {
+    width: 350px;
+    height: 350px;
+  }
+  section#about-us > .about-us-txt {
+    max-width: 630px;
+  }
+  section#about-us > .about-us-txt > div:first-child > div:last-child > h2 {
+    font-size: 35px;
+  }
+  section#about-us > .about-us-txt > p {
+    font-size: 19px;
+  }
+  section#about-us > .about-us-txt > div:last-of-type h5.main-font,
+  section#about-us > .about-us-txt > div:last-of-type p.main-font {
+    font-size: 19px;
   }
 }
 .about-us {
@@ -271,7 +340,8 @@ header > h1 > span {
   section.about-us {
     padding: 40px;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 75px;
   }
   section.about-us > div {
     width: 50%;
@@ -291,6 +361,19 @@ header > h1 > span {
   section.about-us > .about-us-txt > div:last-of-type h5.main-font,
   section.about-us > .about-us-txt > div:last-of-type p.main-font {
     font-size: 13px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  section#companies-slider {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  section#companies-slider > .slider > ul > li {
+    width: 160px;
+    height: 160px;
+  }
+  section#companies-slider .slider[data-animated=true] .scroller_inner {
+    animation: scroll 60s linear infinite;
   }
 }
 .companies-slider > .slider {
@@ -335,6 +418,19 @@ header > h1 > span {
   section.companies-slider > .slider > ul > li {
     width: 110px;
     height: 110px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  section#consulation-form > h2 {
+    font-size: 35px;
+  }
+  section#consulation-form > p {
+    font-size: 19px;
+    margin-bottom: 40px;
+  }
+  section#consulation-form > a {
+    font-size: 35px;
+    width: 258px;
   }
 }
 .consulation-form > h2 {
@@ -386,6 +482,22 @@ header > h1 > span {
   margin-top: -18px;
 }
 
+@media screen and (min-width: 1024px) {
+  section#employee-form {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  section#employee-form > h2 {
+    font-size: 35px;
+  }
+  section#employee-form > p {
+    font-size: 19px;
+  }
+  section#employee-form > a {
+    font-size: 35px;
+    width: 258px;
+  }
+}
 .employee-form > h2 {
   color: #4e5279;
   font-size: 17px;
@@ -428,6 +540,25 @@ header > h1 > span {
   section.employee-form > a {
     font-size: 22px;
     width: 168px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer#footer > .footer-logo {
+    width: 221px;
+  }
+  footer#footer > .footer-logo > svg {
+    width: 100%;
+    height: 100px;
+  }
+  footer#footer > .footer-info > ul > li {
+    font-size: 19px;
+  }
+  footer#footer > .footer-icons > ul {
+    margin-top: 20px;
+  }
+  footer#footer > .footer-icons > ul > li > a > svg {
+    width: 30px;
+    height: 30px;
   }
 }
 footer {

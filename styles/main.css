@@ -27,6 +27,8 @@ h2 {
 }
 .navbar-mobile .hamburger {
   position: relative;
+  left: 0;
+  right: 0;
   display: block;
   width: 35px;
   height: 35px;
@@ -49,7 +51,8 @@ h2 {
 .navbar-mobile .hamburger.is-active {
   position: fixed;
   top: auto;
-  left: 300px;
+  right: 20px;
+  left: auto;
 }
 .navbar-mobile .hamburger.is-active::before {
   transform: rotate(-45deg) translate(-8px, 6px);

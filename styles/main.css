@@ -376,6 +376,22 @@ header > h1 > span {
     animation: scroll 60s linear infinite;
   }
 }
+@media screen and (min-width: 1440px) {
+  section#companies-slider.companies-slider {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  section#companies-slider.companies-slider > .slider {
+    width: 70%;
+  }
+  section#companies-slider.companies-slider > .slider > ul > li {
+    width: 180px;
+    height: 180px;
+  }
+  section#companies-slider.companies-slider .slider[data-animated=true] .scroller_inner {
+    animation: scroll 60s linear infinite;
+  }
+}
 .companies-slider > .slider {
   width: 90%;
   margin: 0 auto;

@@ -64,8 +64,11 @@ h2 {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
 }
 .navbar-mobile .mobile-nav-list {
+<<<<<<< HEAD
   display: flex;
   z-index: 9;
+=======
+>>>>>>> parent of 1288090 (fix bug on navbar menu)
   display: block;
   position: fixed;
   top: 0;

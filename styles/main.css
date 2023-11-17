@@ -48,6 +48,7 @@ h2 {
 }
 .navbar-mobile .hamburger.is-active {
   position: fixed;
+  top: auto;
   right: 20px;
 }
 .navbar-mobile .hamburger.is-active::before {
@@ -95,6 +96,39 @@ h2 {
   text-decoration: none;
 }
 
+@media screen and (min-width: 768px) {
+  section.navbar-mobile {
+    display: none;
+  }
+  section.navbar-desktop {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    padding-bottom: 30px;
+  }
+  section.navbar-desktop > .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  section.navbar-desktop > .links > ul {
+    display: flex;
+    gap: 20px;
+  }
+  section.navbar-desktop > .links > ul > li {
+    list-style: none;
+  }
+  section.navbar-desktop > .links > ul > li > a {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: fit-content;
+    font-size: 17px;
+    color: #4e5279;
+    text-align: left;
+    text-decoration: none;
+  }
+}
 header > h1 {
   font-size: 17px;
   margin: 0 auto;

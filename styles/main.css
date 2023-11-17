@@ -28,7 +28,7 @@ h2 {
     gap: 30px;
   }
   section#navbar-desktop > .links > ul > li > a {
-    font-size: 19px;
+    font-size: 18px;
   }
 }
 .navbar-desktop {
@@ -145,7 +145,7 @@ h2 {
     margin-bottom: 40px;
   }
   header#header > h1 {
-    font-size: 35px;
+    font-size: 30px;
   }
 }
 header > h1 {
@@ -164,7 +164,7 @@ header > h1 > span {
 }
 @media screen and (min-width: 1024px) {
   section#services > .services-heading > .services-txt {
-    font-size: 35px;
+    font-size: 30px;
   }
   section#services > .services-icons-desktop {
     padding: 50px;
@@ -281,14 +281,14 @@ header > h1 > span {
     max-width: 630px;
   }
   section#about-us > .about-us-txt > div:first-child > div:last-child > h2 {
-    font-size: 35px;
+    font-size: 30px;
   }
   section#about-us > .about-us-txt > p {
-    font-size: 19px;
+    font-size: 18px;
   }
   section#about-us > .about-us-txt > div:last-of-type h5.main-font,
   section#about-us > .about-us-txt > div:last-of-type p.main-font {
-    font-size: 19px;
+    font-size: 18px;
   }
 }
 .about-us {
@@ -422,14 +422,14 @@ header > h1 > span {
 }
 @media screen and (min-width: 1024px) {
   section#consulation-form > h2 {
-    font-size: 35px;
+    font-size: 30px;
   }
   section#consulation-form > p {
-    font-size: 19px;
+    font-size: 18px;
     margin-bottom: 40px;
   }
   section#consulation-form > a {
-    font-size: 35px;
+    font-size: 30px;
     width: 258px;
   }
 }
@@ -488,13 +488,13 @@ header > h1 > span {
     margin-bottom: 40px;
   }
   section#employee-form > h2 {
-    font-size: 35px;
+    font-size: 30px;
   }
   section#employee-form > p {
-    font-size: 19px;
+    font-size: 18px;
   }
   section#employee-form > a {
-    font-size: 35px;
+    font-size: 30px;
     width: 258px;
   }
 }
@@ -551,7 +551,7 @@ header > h1 > span {
     height: 100px;
   }
   footer#footer > .footer-info > ul > li {
-    font-size: 19px;
+    font-size: 18px;
   }
   footer#footer > .footer-icons > ul {
     margin-top: 20px;

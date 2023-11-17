@@ -47,10 +47,11 @@
   }
 
   .mobile-nav-list.is-active {
-    left: 20%;
+    left: 0;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
   }
   .mobile-nav-list {
+    z-index: 3;
     display: block;
     position: fixed;
     top: 0;

@@ -29,6 +29,24 @@ h2 {
   }
   section#navbar-desktop > .links > ul > li > a {
     font-size: 18px;
+    position: relative;
+  }
+  section#navbar-desktop > .links > ul > li > a::after {
+    content: "";
+    position: absolute;
+    background-color: #4e5279;
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+  }
+  section#navbar-desktop > .links > ul > li > a:hover::after {
+    width: 100%;
+  }
+  section#navbar-desktop > .links > ul > li > a:hover {
+    color: #abafce;
+    transition: 0.3s;
   }
 }
 .navbar-desktop {
@@ -616,6 +634,10 @@ footer > .footer-icons > ul > li {
 footer > .footer-icons > ul > li > a:hover path {
   fill: white;
   transition: 0.4s;
+}
+
+.services-cards > .services-card > .top-layer > .service-name > h4 {
+  font-size: 20px;
 }
 
 @font-face {

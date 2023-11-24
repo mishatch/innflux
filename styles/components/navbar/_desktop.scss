@@ -13,6 +13,24 @@
         > li {
           > a {
             font-size: $paragraph-size-desktop;
+            position: relative;
+            &::after {
+              content: "";
+              position: absolute;
+              background-color: $primary-bg-dark;
+              width: 0;
+              height: 3px;
+              left: 0;
+              bottom: -10px;
+              transition: 0.3s;
+            }
+            &:hover::after {
+              width: 100%;
+            }
+            &:hover {
+              color: $text-color-lightdark;
+              transition: 0.3s;
+            }
           }
         }
       }

@@ -1,0 +1,58 @@
+body.no-scroll {
+  overflow: hidden;
+}
+#preloader {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  z-index: 9999;
+  background-color: $primary-bg-light;
+}
+#preloader.fade-out {
+  animation: fade-out 1s ease-out forwards;
+}
+#innflux_fill {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#innflux_fill path {
+  animation: fade-in 4s ease forwards;
+  opacity: 0;
+  animation-delay: calc(2 * 1500ms);
+}
+#loading_fill {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#loading_fill path {
+  stroke-dasharray: 6000px;
+  stroke-dashoffset: 6000px;
+  animation: line-anim 9s ease forwards;
+}
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

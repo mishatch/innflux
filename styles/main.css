@@ -668,6 +668,7 @@ footer > .footer-icons > ul > li > a:hover path {
   box-shadow: 0px 4.99999px 13.24998px 3.74999px rgba(0, 0, 0, 0.25);
   margin-top: 30px;
   margin-bottom: 30px;
+  cursor: default;
 }
 .services-cards > .services-heading h2.main-font {
   font-size: 17px;
@@ -742,6 +743,66 @@ footer > .footer-icons > ul > li > a:hover path {
     width: 40%;
   }
 }
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #4e5279;
+  margin-bottom: 20px;
+}
+.contact-us > .contact-header {
+  padding: 9px 23px;
+  background-color: #7075a4;
+  border-radius: 14px;
+  box-shadow: 0px 4.99999px 13.24998px 3.74999px rgba(0, 0, 0, 0.25);
+  margin-top: 30px;
+  margin-bottom: 30px;
+  cursor: default;
+}
+.contact-us > .contact-header > h2 {
+  font-size: 17px;
+  color: #fff;
+}
+.contact-us > .contact-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-us > .contact-content > .contact-txt {
+  margin-bottom: 30px;
+}
+.contact-us > .contact-content > .contact-txt > .contact-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.contact-us > .contact-content > .contact-txt > .contact-info > .contact-logo > svg {
+  width: 30px;
+  height: 40px;
+}
+.contact-us > .contact-content > .contact-txt > .contact-info > div:nth-of-type(2) {
+  color: #abafce;
+}
+.contact-us > .contact-content > .contact-txt > .contact-info > div:nth-of-type(2) > h5 {
+  font-size: 17px;
+}
+.contact-us > .contact-content > .contact-txt > .contact-info > div:nth-of-type(2) > p {
+  font-size: 11px;
+}
+.contact-us > .contact-content > .map {
+  height: 100%;
+  width: 80%;
+  max-width: 100%;
+  aspect-ratio: 1;
+  background-color: #ccc;
+  margin-bottom: 30px;
+}
+.contact-us > .contact-content > .map > iframe {
+  width: 100%;
+  height: 100%;
+}
+
 @font-face {
   font-family: "Actor";
   src: url(../assets/fonts/Actor-Regular.ttf);

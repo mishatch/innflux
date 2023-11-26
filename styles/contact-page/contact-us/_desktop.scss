@@ -1,0 +1,30 @@
+@media screen and (min-width: 1024px) {
+  #contact-us {
+    > .contact-header {
+      > h2 {
+        font-size: $heading-size-desktop;
+      }
+    }
+    > .contact-content {
+      > .contact-information {
+        > .contact-txt {
+          > .contact-info {
+            > div:nth-of-type(2) {
+              > h5 {
+                font-size: $heading-size-desktop;
+              }
+              > p {
+                font-size: $paragraph-size-desktop;
+              }
+            }
+          }
+        }
+      }
+      > .map {
+        padding: 60px;
+        width: 50%;
+        max-width: 700px;
+      }
+    }
+  }
+}

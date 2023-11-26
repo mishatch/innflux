@@ -743,6 +743,29 @@ footer > .footer-icons > ul > li > a:hover path {
     width: 40%;
   }
 }
+@media screen and (min-width: 1024px) {
+  #contact-us > .contact-header > h2 {
+    font-size: 30px;
+  }
+  #contact-us > .contact-content > .contact-information > .contact-txt > .contact-info > div:nth-of-type(2) > h5 {
+    font-size: 30px;
+  }
+  #contact-us > .contact-content > .contact-information > .contact-txt > .contact-info > div:nth-of-type(2) > p {
+    font-size: 18px;
+  }
+  #contact-us > .contact-content > .map {
+    padding: 60px;
+    width: 50%;
+    max-width: 700px;
+  }
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .contact-us {
   display: flex;
   flex-direction: column;
@@ -769,25 +792,26 @@ footer > .footer-icons > ul > li > a:hover path {
   flex-direction: column;
   align-items: center;
 }
-.contact-us > .contact-content > .contact-txt {
+.contact-us > .contact-content > .contact-information > .contact-txt {
   margin-bottom: 30px;
 }
-.contact-us > .contact-content > .contact-txt > .contact-info {
+.contact-us > .contact-content > .contact-information > .contact-txt > .contact-info {
   display: flex;
   align-items: center;
   gap: 20px;
+  width: 150px;
 }
-.contact-us > .contact-content > .contact-txt > .contact-info > .contact-logo > svg {
+.contact-us > .contact-content > .contact-information > .contact-txt > .contact-info > .contact-logo > svg {
   width: 30px;
   height: 40px;
 }
-.contact-us > .contact-content > .contact-txt > .contact-info > div:nth-of-type(2) {
+.contact-us > .contact-content > .contact-information > .contact-txt > .contact-info > div:nth-of-type(2) {
   color: #abafce;
 }
-.contact-us > .contact-content > .contact-txt > .contact-info > div:nth-of-type(2) > h5 {
+.contact-us > .contact-content > .contact-information > .contact-txt > .contact-info > div:nth-of-type(2) > h5 {
   font-size: 17px;
 }
-.contact-us > .contact-content > .contact-txt > .contact-info > div:nth-of-type(2) > p {
+.contact-us > .contact-content > .contact-information > .contact-txt > .contact-info > div:nth-of-type(2) > p {
   font-size: 11px;
 }
 .contact-us > .contact-content > .map {
@@ -795,7 +819,6 @@ footer > .footer-icons > ul > li > a:hover path {
   width: 80%;
   max-width: 100%;
   aspect-ratio: 1;
-  background-color: #ccc;
   margin-bottom: 30px;
 }
 .contact-us > .contact-content > .map > iframe {
@@ -803,6 +826,27 @@ footer > .footer-icons > ul > li > a:hover path {
   height: 100%;
 }
 
+@media screen and (min-width: 768px) {
+  section.contact-us > .contact-header > h2 {
+    font-size: 22px;
+  }
+  section.contact-us > .contact-content {
+    flex-direction: row;
+    padding: 0 50px;
+  }
+  section.contact-us > .contact-content > .contact-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+  }
+  section.contact-us > .contact-content > .contact-information > .contact-txt > .contact-info > div:nth-of-type(2) > h5 {
+    font-size: 22px;
+  }
+  section.contact-us > .contact-content > .contact-information > .contact-txt > .contact-info > div:nth-of-type(2) > p {
+    font-size: 13px;
+  }
+}
 @font-face {
   font-family: "Actor";
   src: url(../assets/fonts/Actor-Regular.ttf);
@@ -825,6 +869,10 @@ body {
 
 .no-scroll {
   overflow: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /*# sourceMappingURL=main.css.map */

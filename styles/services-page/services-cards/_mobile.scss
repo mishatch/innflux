@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 25px;
   > .services-heading {
     padding: 9px 23px;
     background-color: $service-list-color;
@@ -15,46 +16,53 @@
       color: $text-color-light;
     }
   }
-  > .services-card {
-    width: 80%;
-    border-radius: 24px;
-    background-color: $primary-bg-light;
+  > .cards {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
-    margin-bottom: 30px;
-    > .top-layer {
+    align-items: center;
+    > .services-card {
+      width: 75%;
+      max-width: 330px;
+      border-radius: 24px;
+      background-color: $primary-bg-light;
       display: flex;
-      justify-content: flex-start;
-      padding: 20px;
-      position: relative;
-      > .service-name {
-        h4.main-font {
-          font-size: $heading-size-mobile;
-          color: $text-color-dark;
-        }
-      }
-      > .service-logo {
-        background-color: $service-list-color;
-        position: absolute;
-        right: -38px;
-        top: -38px;
-        width: 100px;
-        height: 100px;
+      flex-direction: column;
+      overflow: hidden;
+      margin-bottom: 30px;
+      > .top-layer {
         display: flex;
-        align-items: flex-end;
-        padding: 15px;
-        border-radius: 50%;
-        svg {
-          width: 40px;
+        justify-content: flex-start;
+        padding: 20px;
+        position: relative;
+        > .service-name {
+          h4.main-font {
+            font-size: $heading-size-mobile;
+            color: $text-color-dark;
+          }
+        }
+        > .service-logo {
+          background-color: $service-list-color;
+          position: absolute;
+          right: -38px;
+          top: -38px;
+          width: 100px;
+          height: 100px;
+          display: flex;
+          align-items: flex-end;
+          padding: 15px;
+          border-radius: 50%;
+          svg {
+            width: 40px;
+          }
         }
       }
-    }
-    > .services-card-content {
-      padding: 20px 20px 20px 20px;
-      li {
-        list-style: none;
-        color: $service-list-color;
+      > .services-card-content {
+        padding: 20px 20px 20px 20px;
+        li {
+          list-style: none;
+          color: $service-list-color;
+        }
       }
     }
   }

@@ -1,0 +1,17 @@
+@media screen and (min-width: 768px) {
+  section.services-cards {
+    > .services-heading {
+      h2.main-font {
+        font-size: $heading-size-tablet;
+      }
+    }
+    > .cards {
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      > .services-card {
+        width: 40%;
+      }
+    }
+  }
+}

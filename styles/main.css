@@ -636,11 +636,30 @@ footer > .footer-icons > ul > li > a:hover path {
   transition: 0.4s;
 }
 
+@media screen and (min-width: 1024px) {
+  #services-cards {
+    margin-bottom: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  #services-cards > .services-heading h2.main-font {
+    font-size: 30px;
+  }
+  #services-cards > .cards {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  #services-cards > .cards > .services-card {
+    width: 30%;
+  }
+}
 .services-cards {
   background-color: #4e5279;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 25px;
 }
 .services-cards > .services-heading {
   padding: 9px 23px;
@@ -654,8 +673,15 @@ footer > .footer-icons > ul > li > a:hover path {
   font-size: 17px;
   color: #fff;
 }
-.services-cards > .services-card {
-  width: 80%;
+.services-cards > .cards {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.services-cards > .cards > .services-card {
+  width: 75%;
+  max-width: 330px;
   border-radius: 24px;
   background-color: #d9d9d9;
   display: flex;
@@ -663,17 +689,17 @@ footer > .footer-icons > ul > li > a:hover path {
   overflow: hidden;
   margin-bottom: 30px;
 }
-.services-cards > .services-card > .top-layer {
+.services-cards > .cards > .services-card > .top-layer {
   display: flex;
   justify-content: flex-start;
   padding: 20px;
   position: relative;
 }
-.services-cards > .services-card > .top-layer > .service-name h4.main-font {
+.services-cards > .cards > .services-card > .top-layer > .service-name h4.main-font {
   font-size: 17px;
   color: #4e5279;
 }
-.services-cards > .services-card > .top-layer > .service-logo {
+.services-cards > .cards > .services-card > .top-layer > .service-logo {
   background-color: #7075a4;
   position: absolute;
   right: -38px;
@@ -685,13 +711,13 @@ footer > .footer-icons > ul > li > a:hover path {
   padding: 15px;
   border-radius: 50%;
 }
-.services-cards > .services-card > .top-layer > .service-logo svg {
+.services-cards > .cards > .services-card > .top-layer > .service-logo svg {
   width: 40px;
 }
-.services-cards > .services-card > .services-card-content {
+.services-cards > .cards > .services-card > .services-card-content {
   padding: 20px 20px 20px 20px;
 }
-.services-cards > .services-card > .services-card-content li {
+.services-cards > .cards > .services-card > .services-card-content li {
   list-style: none;
   color: #7075a4;
 }
@@ -703,6 +729,19 @@ footer > .footer-icons > ul > li > a:hover path {
   margin-top: 10px;
 }
 
+@media screen and (min-width: 768px) {
+  section.services-cards > .services-heading h2.main-font {
+    font-size: 22px;
+  }
+  section.services-cards > .cards {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  section.services-cards > .cards > .services-card {
+    width: 40%;
+  }
+}
 @font-face {
   font-family: "Actor";
   src: url(../assets/fonts/Actor-Regular.ttf);

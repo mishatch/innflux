@@ -1,0 +1,20 @@
+@media screen and (min-width: 1024px) {
+  #services-cards {
+    margin-bottom: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+    > .services-heading {
+      h2.main-font {
+        font-size: $heading-size-desktop;
+      }
+    }
+    > .cards {
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      > .services-card {
+        width: 30%;
+      }
+    }
+  }
+}

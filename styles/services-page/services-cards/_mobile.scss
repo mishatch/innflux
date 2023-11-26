@@ -1,11 +1,67 @@
 .services-cards {
+  background-color: $primary-bg-dark;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  > .services-heading {
+    padding: 9px 23px;
+    background-color: $service-list-color;
+    border-radius: 14px;
+    box-shadow: 0px 4.99999px 13.24998px 3.74999px rgba(0, 0, 0, 0.25);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    h2.main-font {
+      font-size: $heading-size-mobile;
+      color: $text-color-light;
+    }
+  }
   > .services-card {
+    width: 80%;
+    border-radius: 24px;
+    background-color: $primary-bg-light;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-bottom: 30px;
     > .top-layer {
+      display: flex;
+      justify-content: flex-start;
+      padding: 20px;
+      position: relative;
       > .service-name {
-        > h4 {
-          font-size: 20px;
+        h4.main-font {
+          font-size: $heading-size-mobile;
+          color: $text-color-dark;
+        }
+      }
+      > .service-logo {
+        background-color: $service-list-color;
+        position: absolute;
+        right: -38px;
+        top: -38px;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: flex-end;
+        padding: 15px;
+        border-radius: 50%;
+        svg {
+          width: 40px;
         }
       }
     }
+    > .services-card-content {
+      padding: 20px 20px 20px 20px;
+      li {
+        list-style: none;
+        color: $service-list-color;
+      }
+    }
+  }
+}
+.services-footer {
+  margin-top: -18px;
+  > .footer-logo {
+    margin-top: 10px;
   }
 }

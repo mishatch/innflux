@@ -31,6 +31,13 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    > .service {
+      > p {
+        color: $text-color-lightdark;
+        font-size: $heading-size-mobile;
+        text-align: center;
+      }
+    }
     > div:last-of-type {
       margin-bottom: 20px;
     }

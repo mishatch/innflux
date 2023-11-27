@@ -236,6 +236,11 @@ header > h1 > span {
   align-items: center;
   gap: 20px;
 }
+.services > .services-icons-mobile > .service > p {
+  color: #abafce;
+  font-size: 17px;
+  text-align: center;
+}
 .services > .services-icons-mobile > div:last-of-type {
   margin-bottom: 20px;
 }

@@ -1,5 +1,5 @@
 let valueDisplays = document.querySelectorAll(".num");
-let interval = 60;
+let interval = 2500;
 const animateNumbers = () => {
   valueDisplays.forEach((valueDisplay) => {
     let startValue = 0;
@@ -11,7 +11,7 @@ const animateNumbers = () => {
       if (startValue === endValue) {
         clearInterval(counter);
       }
-    }, interval);
+    }, duration);
   });
 };
 

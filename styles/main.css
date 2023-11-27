@@ -886,7 +886,7 @@ body.no-scroll {
 #innflux_fill path {
   animation: fade-in 4s ease forwards;
   opacity: 0;
-  animation-delay: 3000ms;
+  animation-delay: 1500ms;
 }
 
 #loading_fill {
@@ -899,7 +899,7 @@ body.no-scroll {
 #loading_fill path {
   stroke-dasharray: 6000px;
   stroke-dashoffset: 6000px;
-  animation: line-anim 9s ease forwards;
+  animation: line-anim 5s ease forwards;
 }
 
 @keyframes line-anim {

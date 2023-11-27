@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
       preloader.remove();
       document.body.style.overflow = "auto";
     }, 1000);
-  }, 5000);
+  }, 3500);
 });
 
 document.addEventListener("DOMContentLoaded", function () {

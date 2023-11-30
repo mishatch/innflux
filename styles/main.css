@@ -215,7 +215,7 @@ header > h1 > span {
   height: 0;
   border-top: 100px solid transparent;
   border-bottom: 0px solid transparent;
-  border-left: 99vw solid #4e5279;
+  border-left: 98vw solid #4e5279;
 }
 .services > .services-heading > .services-txt {
   position: absolute;

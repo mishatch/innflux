@@ -41,3 +41,18 @@ const animatedElement = document.querySelector(".num");
 if (animatedElement) {
   observer.observe(animatedElement);
 }
+
+const hiddenElements = document.querySelectorAll(".hidden");
+const observer2 = new IntersectionObserver
+((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+        }else{
+        entry.target.classList.remove('show');
+        }
+    });
+})
+hiddenElements.forEach((element) => {
+    observer2.observe(element);
+});

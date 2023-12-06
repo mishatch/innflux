@@ -2,14 +2,16 @@
 @import "../../palette";
 .services {
   width: 100%;
+  overflow-x: hidden;
+
   > .services-heading {
     position: relative;
     > .triangle-container {
-      width: 100%;
+      width: 0;
       height: 0;
       border-top: 100px solid transparent;
-      border-bottom: 0px solid transparent;
-      border-left: 98vw solid $primary-bg-dark;
+      border-bottom: 0 solid transparent;
+      border-left: 100vw solid $primary-bg-dark;
     }
     > .services-txt {
       position: absolute;
@@ -20,7 +22,7 @@
       border-radius: 14px;
       background-color: $primary-bg-dark;
       padding: 9px 23px;
-      box-shadow: 0px 4.99999px 13.24998px 3.74999px rgba(0, 0, 0, 0.25);
+      box-shadow: 0 4.99999px 13.24998px 3.74999px rgba(0, 0, 0, 0.25);
     }
   }
   > .services-icons-mobile {

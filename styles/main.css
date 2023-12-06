@@ -391,7 +391,7 @@ header > h1 > span {
   opacity: 0;
   filter: blur(10px);
   transform: translateX(-30%);
-  transition: all 1s;
+  transition: all 0.7s;
 }
 
 .show {

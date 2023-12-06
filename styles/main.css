@@ -390,7 +390,7 @@ header > h1 > span {
 .hidden {
   opacity: 0;
   filter: blur(10px);
-  transform: translateX(-40%);
+  transform: translateX(-30%);
   transition: all 1s;
 }
 
